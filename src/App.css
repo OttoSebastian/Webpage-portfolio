@@ -1,0 +1,456 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* Tags */
+p {
+  color: white;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  top: 100px;
+  background-color: #ededed;
+  transition: ease-in-out 0.3s;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 5px 0 0px #cab08f;
+}
+.sidebar:hover {
+  width: 200px;
+}
+.sidebar:hover > .item > .text {
+  opacity: 1;
+}
+.hrSideBar {
+  height: 2px;
+  background-color: #cab08f;
+  border-color: #cab08f;
+  border-width: 0;
+  margin: 15px 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 90%,
+      #146956 90%,
+      #146956 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+}
+.item:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+.icon {
+  width: 40px;
+  height: 35px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  color: #146956;
+}
+.text {
+  color: #146956;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  transition-delay: .2s;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+/* Buttons */
+.btnPrimary {
+  width: 210px;
+  height: 70px;
+  color: #ededed;
+  background-color: #146956;
+  font-size: 20px;
+  border-radius: 20px;
+  border-style: double;
+  border-color: #cab08f;
+  border-width: 3px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.btnPrimary:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 0 50px #146956;
+}
+.btnSecondary {
+  width: 165px;
+  height: 50px;
+  color: #ededed;
+  background-color: #cab08f;
+  font-size: 20px;
+  border-radius: 20px;
+  border-style: double;
+  border-color: #146956;
+  border-width: 3px;
+  transition: transform 0.3s;
+}
+.btnSecondary:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.btnArrow{
+  position: absolute;
+  bottom: 10%;
+  width: 90px;
+  height: 90px;
+  color: #ededed;
+  background-color: #146956;
+  font-size: 30px;
+  border-radius: 45px;
+  border-style: double;
+  border-color: #cab08f;
+  border-width: 3px;
+  padding-top: 10px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.btnArrow:hover{
+  cursor: pointer;
+  box-shadow: 0 0 70px #146956;
+  transform: scale(1.05);
+}
+.buttonDiv {
+  display: flex;
+}
+
+/* Headers */
+.headerDiv {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../src/pictures/Laptop.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentHeader {
+  position: absolute;
+  top: -2%;
+  width: 1800px;
+  height: 280px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 150px;
+  color: white;
+  text-align: center;
+}
+.highlightedWord {
+  color: #cab08f;
+}
+.byText{
+  font-size: x-large;
+  font-style: italic;
+  padding-bottom: 150px;
+}
+
+/* AboutMe */
+.aboutMeDiv {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentDiv{
+  display: flex;
+  margin-top: 15%;
+}
+
+/* Content Box */
+.contentBox{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 600px;
+  margin: 55px;
+  background-color: #ededed;
+  border-radius: 20px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.contentBox:hover{
+  box-shadow: 0 0 70px #146956;
+  transform: scale(1.02);
+}
+
+/* Education */
+.educationDiv{
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.educationContent{
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  width: 30%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.educationContent2 {
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  width: 50%;
+  height: 65%;
+  text-align: center;
+}
+.boxesDiv{
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+}
+.verticalLine{
+  margin-left: 15%;
+  width: 0.3%;
+  height: 85%;
+  background-color: #cab08f;
+}
+.quote{
+  text-align: center;
+  font-family: "italic";
+  font-style: "italic";
+  color: #cab08f;
+}
+
+/* Skill Box */
+.skillBox {
+  height: 15%;
+  padding: 30px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  transition: box-shadow 0.3s, transform 0.3s;
+  font-style: italic;
+  font-weight: 350;
+  border-radius: 25px;
+}
+.skillBox:hover{
+  box-shadow: 0 0 30px #cab08f;
+  transform: scale(1.07);
+  color: #cab08f;
+}
+
+/* Work */
+.workDiv{
+  position: absolute;
+  top: 300vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+}
+.workContent{
+  margin-top: 10%;
+  width: 55%;
+  height: 60%;
+  margin-right: 7%;
+  margin-left: 7%;
+  text-align: center;
+}
+
+/* Projects */
+.projectsDiv{
+  position: absolute;
+  top: 400vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+}
+.projectBoxes{
+  margin-top: 10%;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+.projectContent{
+  margin-top: 10%;
+  margin-right: 7%;
+  text-align: center;
+}
+
+/* Project Box */
+.projectBox{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 600px;
+  margin: 55px;
+  background-color: #ededed;
+  border-radius: 20px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.projectBox:hover{
+  box-shadow: 0 0 70px #cab08f;
+  transform: scale(1.02);
+}
+.projectBoxHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: #cab08f;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: #ededed;
+  font-size: 40px;
+  font-weight: bold;
+}
+.projectBoxBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  height: 70%;
+  text-align: center;
+  font-style: inherit;
+  font-weight: 200;
+  color: #1d1d1d;
+}
+.projectBoxFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #ededed;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* IT skills */
+.itDiv{
+  position: absolute;
+  top: 500vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+}
+.contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 60%;
+  margin-top: 10%;
+}
+.itLogos{
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  width: 90%;
+}
+.itContent{
+  margin-right: 7%;
+  margin-left: 7%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 90%;
+  box-shadow: 0 0 15px black;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footerDiv{
+  position: absolute;
+  top: 600vh;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  outline: solid 4px #cab08f;
+}
+.footerBox{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 10%;
+  height: 90%;
+  color: #ededed;
+}
+.footerItem{
+  color: #ededed;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  height: 16%;
+  transition: transform 0.3s;
+}
+.footerItemHover{
+  color: #ededed;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  height: 16%;
+  transition: transform 0.3s;
+}
+.footerItemHover:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
