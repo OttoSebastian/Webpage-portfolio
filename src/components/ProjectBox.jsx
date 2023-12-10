@@ -8,6 +8,9 @@ export default function ProjectBox({icon1, icon2, children}) {
         marginRight: "5%",
         fontSize: "60px"
     }
+    const openCode = () => {
+        window.open('https://github.com/OttoSebastian/Webpage-portfolio', '_blank');
+      };
 
   return (
     <div className={'projectBox'}>
@@ -19,7 +22,7 @@ export default function ProjectBox({icon1, icon2, children}) {
             {children}
         </div>
         <div className='projectBoxFooter'>
-            <Button type={"button"} text={"See code"} wantedClass={"btnSecondary"}/>
+            <Button type={"button"} text={"See code"} wantedClass={"btnSecondary"} onClick={openCode}/>
         </div>
     </div>
   )
