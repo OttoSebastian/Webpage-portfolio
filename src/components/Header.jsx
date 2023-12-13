@@ -12,6 +12,8 @@ export default function Header({text = "Enter the header or title here", wordHig
     color: "white",
     textAlign: "center",
     paddingBottom: "20px",
+    webkitAnimation: "text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both",
+	  animation: "text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
   }
 
   return (

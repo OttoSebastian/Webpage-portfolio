@@ -131,12 +131,13 @@ p {
   border-color: #cab08f;
   border-width: 3px;
   padding-top: 10px;
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition: box-shadow 0.3s;
+  -webkit-animation: bounce-in-top 1.5s 1.5s both;
+	animation: bounce-in-top 1.5s 1.5s both;
 }
 .btnArrow:hover{
   cursor: pointer;
   box-shadow: 0 0 70px #146956;
-  transform: scale(1.05);
 }
 .buttonDiv {
   display: flex;
@@ -174,6 +175,8 @@ p {
   font-size: x-large;
   font-style: italic;
   padding-bottom: 150px;
+  -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 /* AboutMe */
@@ -454,3 +457,5 @@ p {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+
