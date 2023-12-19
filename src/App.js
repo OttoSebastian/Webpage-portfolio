@@ -25,6 +25,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { TbSql, TbBrandCSharp } from "react-icons/tb";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { SiXampp } from "react-icons/si";
+import { BsDatabaseDown } from "react-icons/bs";
 //Pictures
 import libanonImg from '../src/pictures/libanon.jpeg';
 
@@ -145,11 +146,10 @@ function App() {
         <ContentHeader text='My coding ' wordHighlight='projects' highlightColor={"#cab08f"}/>
         <div className='projectBoxes'>
           <ProjectBox icon1={<IoLogoJavascript/>} icon2={<FaReact/>}>
-            <h2 style={{marginBottom: "0%"}}>Webpage portfolio</h2>
-            <p style={{color: "#1d1d1d"}}>
-              I created a webpage about myself and my skills. The project was done by using HTML, CSS, JavaScript and React. This was my very first free time project. I wanted to challenge myself and really 
-              test my knowledge on the React library. I'm still on the very early steps when it comes to UI/web development, but this project taught me so much and I'm really pleased of the final product.
-            </p>
+            <h2 style={{marginBottom: "0%", fontSize: "40px"}}>Webpage portfolio</h2>
+          </ProjectBox>
+          <ProjectBox icon1={<BsDatabaseDown/>} icon2={<FaReact/>}>
+            <h2 style={{marginBottom: "0%", fontSize: "40px"}}>Weather app</h2>
           </ProjectBox>
         </div>
         <div className='projectContent'>
@@ -172,9 +172,9 @@ function App() {
           <div className='itContent'>
             <h2 style={{color: "#146956", fontSize: "35px"}}>Softwares and tools</h2>
             <p style={{fontSize: "30px", fontWeight: "200", paddingLeft: "2%", paddingRight: "2%"}}>
-              I've used mainly Visual Studio and Visual Studio Code for coding during my studies and projects. With that Github version control has become very familiar, especially when 
-              working on group projects. Many of our school projects have involved using Xampp aswell. I'm also interested in robotic process automation, and have taken one supplementary course 
-              on the subject. There I used UI Path StudioX software.
+              I've used mainly Visual Studio and Visual Studio Code for coding during my studies and projects. With that Github version control has become very familiar. 
+              Many of our school projects have involved using Xampp aswell. I'm also interested in robotic process automation, and have taken one supplementary course 
+              on the subject. There I used UI Path StudioX software. At the moment I'm also learning about API's.
             </p>
             <div className='itLogos'>
               <IoLogoGithub style={{marginRight: "5%"}}/>

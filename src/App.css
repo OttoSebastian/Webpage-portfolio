@@ -103,20 +103,23 @@ p {
   box-shadow: 0 0 50px #146956;
 }
 .btnSecondary {
-  width: 165px;
-  height: 50px;
+  width: 130px;
+  height: 40px;
   color: #ededed;
   background-color: #cab08f;
   font-size: 20px;
   border-radius: 20px;
   border-style: double;
-  border-color: #146956;
+  border-color: #cab08f;
   border-width: 3px;
   transition: transform 0.3s;
+  margin-bottom: 7%;
 }
 .btnSecondary:hover {
   cursor: pointer;
   transform: scale(1.05);
+  background-color: #000000;
+  border-color: #000000;
 }
 .btnArrow{
   position: absolute;
@@ -317,6 +320,7 @@ p {
   margin-top: 10%;
   margin-right: 7%;
   margin-left: 7%;
+  outline: dashed 2px red;
 }
 .projectContent{
   margin-top: 10%;
@@ -328,8 +332,8 @@ p {
 .projectBox{
   display: flex;
   flex-direction: column;
-  height: 600px;
-  width: 600px;
+  height: 250px;
+  width: 500px;
   margin: 55px;
   background-color: #ededed;
   border-radius: 20px;
@@ -343,7 +347,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
+  height: 35%;
   background-color: #cab08f;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -354,7 +358,6 @@ p {
 .projectBoxBody{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;

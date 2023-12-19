@@ -9,7 +9,7 @@ export default function ProjectBox({icon1, icon2, children}) {
         fontSize: "60px"
     }
     const openCode = () => {
-        window.open('https://github.com/OttoSebastian/Webpage-portfolio', '_blank');
+        window.open('https://github.com/OttoSebastian?tab=repositories', '_blank');
       };
 
   return (
